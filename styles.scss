@@ -230,3 +230,67 @@ h2 {
     }
 }
 
+// hero 
+
+.logo {
+    margin: 2rem;
+}
+
+.hero {
+    
+    .hero__image {
+            content: url(Assets/hero_mobile.jpg);
+            width: 100%;
+        
+            @media screen and (min-width: 768px) {
+                content: url(Assets/Hero_Image.jpg);
+                width: 51vw;
+                height: 100vh;
+                object-fit: cover;
+            }
+    }
+
+    .hero__content{
+        padding: 2rem;
+        .logo{
+            display: none;
+        }
+
+        .partners{
+            padding-top: 3rem;
+        }
+    }
+
+
+    @media screen and (min-width: 768px) {
+        &{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row-reverse;
+
+            .hero__content{
+                position: relative;
+                padding-left: 7rem;
+                padding-right: 4rem;
+                .logo{
+                    display: block;
+                    position: fixed;
+                    top: 1rem;
+                    left: 5rem;
+                }
+
+                h1{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .logo{
+        display: none;
+    }
+}
+

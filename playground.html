@@ -13,21 +13,50 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body style="padding: 4rem; height: 200vh;">
-    
-    <div class="card">
-        <div class="card__header">
-          <img
-            src="Assets/Camp Images/High Quality Images/Buloy Springs.jpg"
-            alt=""
-          />
-        </div>
-        <div class="card__body">
-          <p class="card__body-heading">Mount Ulap</p>
-          <p>One of the most famous hike in Benuguet is Mt Ulap in Itogon.</p>
-          <button class="btn btn--secondary">View campgrounds</button>
-        </div>
+
+  <style>
+
+    body{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: 0;
+    }
+
+    .hero__img{
+      width: 50vw;
+      height: 100vh;
+      object-fit: cover;
+      justify-self: end;
+    }
+
+    .nav {
+      justify-self: left;
+    }
+
+  </style>
+
+
+  <body >
+
+    <div class="nav container collapsible">
+      <div class="img__wrapper">
+        <img src="Assets/Logo.svg" alt="">
+        <img class="hamburger" src="Assets/Hamburger Menu.svg" alt="">
       </div>
+      <div class="nav__items list collapsible__content">
+        <li>Home</li>
+        <li>Login</li>
+        <li><button class="btn">View campgrounds</button></li>
+      </div>
+    </div>
+
+    <div>
+
+      <img class="hero__img" src="Assets/Hero_Image.jpg" alt="">
+    </div>
+    
+
+    
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

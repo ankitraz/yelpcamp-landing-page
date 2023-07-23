@@ -182,4 +182,59 @@ h2 {
   .nav .nav__items li:hover {
     color: #000000;
   }
+}
+
+.logo {
+  margin: 2rem;
+}
+
+.hero .hero__image {
+  content: url(Assets/hero_mobile.jpg);
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .hero .hero__image {
+    content: url(Assets/Hero_Image.jpg);
+    width: 51vw;
+    height: 100vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+.hero .hero__content {
+  padding: 2rem;
+}
+.hero .hero__content .logo {
+  display: none;
+}
+.hero .hero__content .partners {
+  padding-top: 3rem;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  .hero .hero__content {
+    position: relative;
+    padding-left: 7rem;
+    padding-right: 4rem;
+  }
+  .hero .hero__content .logo {
+    display: block;
+    position: fixed;
+    top: 1rem;
+    left: 5rem;
+  }
+  .hero .hero__content h1 {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    display: none;
+  }
 }/*# sourceMappingURL=styles.css.map */
