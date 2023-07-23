@@ -172,6 +172,59 @@ h2 {
     }
 }
 
+// search-bar
+.search {
+
+    background: $landing-page-color;
+    .search__content{
+        h2{
+            margin-bottom: 0;
+        }
+
+        .input-group{
+            background-color: #fff;
+            width: 100%;
+            margin-bottom: 1rem;
+            .input{
+                width: 100%;
+            }
+        }
+
+        padding: 4rem;
+         .btn{
+            width: 100%;
+         }
+    }
+
+
+    @media screen and (min-width: 768px) {
+        & {
+            .search__content{
+                width: 50%;
+
+                .input-group{
+                    width: 60%;
+                }
+
+                .btn{
+                    width: 23%;
+                    height: max-content;
+                    margin-left: 1rem;
+                    padding: 1.21rem 2rem;
+                }
+                .input_plus_btn{
+                    display: flex;
+                    
+                }
+            }
+            
+        }
+    }
+        
+}
+
+
+
 // collapsible
 .collapsible__content {
     display: none;
@@ -271,8 +324,8 @@ h2 {
 
             .hero__content{
                 position: relative;
-                padding-left: 7rem;
-                padding-right: 4rem;
+                padding-left: 8rem;
+                padding-right: 7rem;
                 .logo{
                     display: block;
                     position: fixed;
@@ -294,3 +347,5 @@ h2 {
     }
 }
 
+
+//

@@ -141,6 +141,45 @@ h2 {
   overflow: hidden;
 }
 
+.search {
+  background: #f9f6f1;
+}
+.search .search__content {
+  padding: 4rem;
+}
+.search .search__content h2 {
+  margin-bottom: 0;
+}
+.search .search__content .input-group {
+  background-color: #fff;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.search .search__content .input-group .input {
+  width: 100%;
+}
+.search .search__content .btn {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .search .search__content {
+    width: 50%;
+  }
+  .search .search__content .input-group {
+    width: 60%;
+  }
+  .search .search__content .btn {
+    width: 23%;
+    height: -moz-max-content;
+    height: max-content;
+    margin-left: 1rem;
+    padding: 1.21rem 2rem;
+  }
+  .search .search__content .input_plus_btn {
+    display: flex;
+  }
+}
+
 .collapsible__content {
   display: none;
 }
@@ -219,8 +258,8 @@ h2 {
   }
   .hero .hero__content {
     position: relative;
-    padding-left: 7rem;
-    padding-right: 4rem;
+    padding-left: 8rem;
+    padding-right: 7rem;
   }
   .hero .hero__content .logo {
     display: block;
