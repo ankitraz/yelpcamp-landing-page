@@ -22,7 +22,7 @@ html {
 
 body {
   font-family: "Archivo", sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: #6e6b66;
 }
 
@@ -46,7 +46,7 @@ h2 {
     font-size: 4rem;
   }
   body {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
   }
 }
 .link {
@@ -253,6 +253,9 @@ h2 {
   margin: 2rem;
 }
 
+.hero {
+  font-size: 1.72rem;
+}
 .hero .hero__image {
   content: url(Assets/hero_mobile.jpg);
   width: 100%;
