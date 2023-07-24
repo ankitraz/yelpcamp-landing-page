@@ -16,7 +16,8 @@ html {
 .block {
     max-width: 120rem;
     margin: 0 auto;
-    padding: 0 2rem;
+    --padding-vertical: 6rem;
+    padding: var(--padding-vertical) 2rem;
 }
 
 .container {
@@ -29,7 +30,7 @@ html {
 // typography
 body {
     font-family: 'Archivo', sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: $body-color;
 }
 
@@ -55,9 +56,16 @@ h2 {
     }
 
     body {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 }
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+
 
 // list
 .list {
@@ -146,6 +154,8 @@ h2 {
     .card__header{
         overflow: hidden;
         border-radius: 5px;
+        // max-height: 20rem;
+        
 
         img {
             width: 100%;
@@ -174,6 +184,14 @@ h2 {
 
 // search-bar
 .search {
+    
+    &.container{
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        border-radius: 4px;
+    }
+
+
 
     background: $landing-page-color;
     .search__content{
@@ -199,6 +217,14 @@ h2 {
 
     @media screen and (min-width: 768px) {
         & {
+            &.container{
+                margin: 0 auto;
+                
+            }
+
+            padding-left: 0rem;
+            padding-right: 0rem;
+
             .search__content{
                 width: 50%;
 
@@ -237,6 +263,13 @@ h2 {
 
 // navbar
 .nav {
+
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+
     .img__wrapper{
         display: flex;
         justify-content: space-between;
@@ -257,6 +290,9 @@ h2 {
 
     @media screen and (min-width: 768px) {
         & {
+
+            padding-left: 0rem;
+            padding-right: 0rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -348,4 +384,22 @@ h2 {
 }
 
 
-//
+//grid
+.grid {
+    display: grid;
+
+    @media screen and (min-width: 768px) {
+        &.grid--2x3 {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+    }
+}
+
+// showcase section
+
+.showcase {
+    .grid{
+        gap: 3rem;
+    }
+}

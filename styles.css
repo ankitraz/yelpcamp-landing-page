@@ -11,7 +11,8 @@ html {
 .block {
   max-width: 120rem;
   margin: 0 auto;
-  padding: 0 2rem;
+  --padding-vertical: 6rem;
+  padding: var(--padding-vertical) 2rem;
 }
 
 .container {
@@ -21,7 +22,7 @@ html {
 
 body {
   font-family: "Archivo", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: #6e6b66;
 }
 
@@ -45,9 +46,14 @@ h2 {
     font-size: 4rem;
   }
   body {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 }
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .list {
   list-style: none;
   padding-left: 0;
@@ -144,6 +150,11 @@ h2 {
 .search {
   background: #f9f6f1;
 }
+.search.container {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  border-radius: 4px;
+}
 .search .search__content {
   padding: 4rem;
 }
@@ -162,6 +173,13 @@ h2 {
   width: 100%;
 }
 @media screen and (min-width: 768px) {
+  .search {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+  .search.container {
+    margin: 0 auto;
+  }
   .search .search__content {
     width: 50%;
   }
@@ -188,6 +206,12 @@ h2 {
   display: block;
 }
 
+.nav {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
 .nav .img__wrapper {
   display: flex;
   justify-content: space-between;
@@ -203,6 +227,8 @@ h2 {
 }
 @media screen and (min-width: 768px) {
   .nav {
+    padding-left: 0rem;
+    padding-right: 0rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -276,4 +302,17 @@ h2 {
   .logo {
     display: none;
   }
+}
+.grid {
+  display: grid;
+}
+@media screen and (min-width: 768px) {
+  .grid.grid--2x3 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+.showcase .grid {
+  gap: 3rem;
 }/*# sourceMappingURL=styles.css.map */
